@@ -17,6 +17,9 @@ cask "foray" do
 
   app "Foray.app"
 
+  # Quit a running Foray before upgrading or removing it, so the next launch is the new version.
+  uninstall quit: "io.github.emkey1.Foray"
+
   zap trash: [
     "~/Library/Application Support/Foray",
     "~/Library/Caches/io.github.emkey1.Foray",
