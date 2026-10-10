@@ -1,6 +1,6 @@
 cask "foray" do
-  version "0.9.2"
-  sha256 "c70cfd685509f78a60d3e6bdd509d2c9b1e66a3afd2f4f1d42cbc33847d0e02a"
+  version "0.10.0"
+  sha256 "08eaf418d5efa9908b81d13d7c7a98395f0b72750783041d48226352c9d24596"
 
   url "https://github.com/emkey1/Foray/releases/download/v#{version}/Foray-#{version}.dmg"
   name "Foray"
@@ -16,6 +16,7 @@ cask "foray" do
   depends_on macos: :tahoe
 
   app "Foray.app"
+  binary "#{appdir}/Foray.app/Contents/Helpers/foray"
 
   # Quit a running Foray before upgrading or removing it, so the next launch is the new version.
   uninstall quit: "io.github.emkey1.Foray"
