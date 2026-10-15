@@ -1,6 +1,6 @@
 cask "foray" do
-  version "0.10.4"
-  sha256 "74295f967fd9d563c40796426d9fc3e92104f9d042d6f90387e94a07b2b373a1"
+  version "0.10.5"
+  sha256 "230feee20bac16e452f05ad881b97655fe21457cee33065b5b4ecdef3aaeb6c9"
 
   url "https://github.com/emkey1/Foray/releases/download/v#{version}/Foray-#{version}.dmg"
   name "Foray"
@@ -13,7 +13,7 @@ cask "foray" do
   end
 
   auto_updates true
-  depends_on macos: :tahoe
+  depends_on macos: :sequoia
 
   app "Foray.app"
   binary "#{appdir}/Foray.app/Contents/Helpers/foray"
