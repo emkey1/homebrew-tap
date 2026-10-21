@@ -1,9 +1,9 @@
 cask "foray" do
-  version "0.10.5"
-  sha256 "230feee20bac16e452f05ad881b97655fe21457cee33065b5b4ecdef3aaeb6c9"
+  version "0.10.6"
+  sha256 "bd4502b61403cac6267abaf1db14c920ddc3958634c8695ac9843fc8da1c6e3a"
 
   url "https://github.com/emkey1/Foray/releases/download/v#{version}/Foray-#{version}.dmg"
-  name "Foray"
+  name "AOK-Foray"
   desc "File browser that does what Finder does, minus the parts that get in the way"
   homepage "https://github.com/emkey1/Foray"
 
